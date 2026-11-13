@@ -1,0 +1,11 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Color Recipe Book</title><link rel="stylesheet" href="/static/style.css">
+<link rel="manifest" href="/static/manifest.json">
+<meta name="theme-color" content="#6d45d8">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Color Recipes">
+<link rel="apple-touch-icon" href="/static/icon-192.svg"></head><body>
+<header><div><h1>Color Recipe Book</h1><small>Клиенты и рецепты окрашивания</small></div><button class="primary" onclick="newClient()">＋ Новый клиент</button></header>
+<main><aside><input id="search" placeholder="Поиск: фамилия, ФИО, телефон" oninput="load()"><div class="bar"><span id="count"></span><select id="filter" onchange="render()"><option value="all">Все</option><option value="fav">Избранные</option></select></div><div id="list"></div></aside><section id="view"><div class="empty"><b>🎨</b><h2>Выберите клиента</h2><p>Создайте клиента, чтобы добавить историю окрашиваний.</p></div></section></main>
+<div id="modal" class="modal" hidden><div class="box"><div class="mh"><h2 id="mt"></h2><button onclick="closeM()">×</button></div><div id="mb"></div></div></div><script src="/static/app.js"></script>
+<script>if("serviceWorker" in navigator){navigator.serviceWorker.register("/static/sw.js");}</script></body></html>

@@ -1,0 +1,13 @@
+{
+  "name": "Color Recipe Book",
+  "short_name": "Color Recipes",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f5f6f8",
+  "theme_color": "#6d45d8",
+  "description": "Книга клиентов и рецептов окрашивания волос",
+  "icons": [
+    {"src": "/static/icon-192.svg", "sizes": "192x192", "type": "image/svg+xml", "purpose": "any maskable"},
+    {"src": "/static/icon-512.svg", "sizes": "512x512", "type": "image/svg+xml", "purpose": "any maskable"}
+  ]
+}
